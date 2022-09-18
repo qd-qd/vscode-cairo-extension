@@ -1,0 +1,84 @@
+{
+  "name": "cairo-unofficial",
+  "displayName": "Cairo Unofficial",
+  "description": "Unofficial support of the Cairo syntax",
+  "version": "0.10.0",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "dependencies": {
+    "vscode-languageclient": "^5.0.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:cairo"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "languages": [
+      {
+        "id": "cairo",
+        "aliases": [
+          "Cairo",
+          "cairo"
+        ],
+        "extensions": [
+          ".cairo"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "cairo",
+        "scopeName": "source.cairo",
+        "path": "./syntaxes/cairo.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.python": "source.python"
+        }
+      }
+    ],
+    "snippets": [
+      {
+        "language": "cairo",
+        "path": "./snippets.json"
+      }
+    ],
+    "configuration": [
+      {
+        "title": "Cairo",
+        "properties": {
+          "cairo.cairoFormatPath": {
+            "type": "string",
+            "default": "cairo-format",
+            "description": "Path to the cairo-format utility.",
+            "scope": "window"
+          }
+        }
+      }
+    ],
+    "configurationDefaults": {
+      "[cairo]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
+      }
+    }
+  },
+  "publisher": "qd-qd",
+  "repository": "https://github.com/qd-qd/vscode-cairo/",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "package": "vsce package -o out",
+    "deploy:local": "code --install-extension out/cairo-unofficial-*.vsix"
+  },
+  "devDependencies": {
+    "typescript": "^3.1.4",
+    "vscode": "^1.1.25",
+    "@types/node": "^8.10.25"
+  }
+}

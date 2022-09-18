@@ -8,6 +8,8 @@ This repository is a way to relieve the Starkware teams by out-sourcing the deve
 
 This extension is intended to support all the features developed by Starkware up to now, and to add to it features that make the development of programs written in Cairo smoother.
 
+![preview of the extension](./documentation/preview.gif)
+
 ## Installation
 
 Make sure you installed [`vsce`](https://www.npmjs.com/package/vsce) globally and you installed the dependencies of this repository. These steps only need to be done once
@@ -32,6 +34,7 @@ If you have `cairo-format` installed globally (available in PATH), the value of
 
 If you're working inside a StarkWare repository, and want the most up-to-date version,
 set the value of `cairo.cairoFormatPath` to
+
 ```
 ${workspaceFolder}/src/starkware/cairo/lang/scripts/cairo-format
 ```

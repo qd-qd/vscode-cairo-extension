@@ -1,4 +1,4 @@
-# Cairo extenson (unofficial)
+# Cairo extension (unofficial)
 
 ## Introduction
 
@@ -48,4 +48,4 @@ This extension supports all the features developed by Starkware, plus
 - A new snippet for the `@raw_input` decorator
 - A new snippet for the `@raw_output` decorator
 - A new snippet that let you create a function that uses both the `@raw_input` and `@raw_output` decorators
-- An improvement that allows you to write a `storage_var` mapping more easily
+- An improvement that allows you to write a `@storage_var` mapping more easily

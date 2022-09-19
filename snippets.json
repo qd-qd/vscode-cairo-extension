@@ -107,5 +107,17 @@
             "}"
         ],
         "description": "A contract interface for another contract."
+    },
+    "Struct": {
+        "prefix": [
+            "struct"
+        ],
+        "body": [
+            "struct ${1:PascalCaseName} {",
+            "    ${2:first_member}: ${3:felt},",
+            "    ${4:second_member}: ${5:felt}",
+            "}"
+        ],
+        "description": "A Cairo struct"
     }
 }

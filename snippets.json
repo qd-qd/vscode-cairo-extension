@@ -119,5 +119,14 @@
             "}"
         ],
         "description": "A Cairo struct"
+    },
+    "Allocation pointer": {
+        "prefix": [
+            "app"
+        ],
+        "body": [
+            "[ap${1}] = ${2}, ap++;"
+        ],
+        "description": "A snippet for the allocation point statement"
     }
 }

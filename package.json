@@ -67,7 +67,7 @@
     }
   },
   "publisher": "qdqd",
-  "repository": "https://github.com/qd-qd/vscode-cairo/",
+  "repository": "https://github.com/qd-qd/vscode-cairo-extension/",
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",

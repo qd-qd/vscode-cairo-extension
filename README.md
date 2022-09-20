@@ -1,5 +1,10 @@
 # Cairo extension (unofficial)
 
+<p>
+<img src="https://vsmarketplacebadge.apphb.com/version/qdqd.cairo-unofficial.svg" alt="Extension version"/>
+<img src="https://vsmarketplacebadge.apphb.com/downloads/qdqd.cairo-unofficial.svg" alt="Number of downloads"/>
+</p>
+
 ## Introduction
 
 The Starkware team is doing a great job in developing the Cairo language and the Starknet layer2. At the time I create this repository, the team is focused on issues and improvements (regenesis, cairo v1...) much more important than the development of the vscode extension, which is absolutely fine. However, since the vscode extensions lives in the [cairo-lang](https://github.com/starkware-libs/cairo-lang) monorepo its non-priority development is slowed down.

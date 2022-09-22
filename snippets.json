@@ -128,5 +128,16 @@
             "[ap${1}] = ${2}, ap++;"
         ],
         "description": "A snippet for the allocation point statement"
+    },
+    "Event": {
+        "prefix": [
+            "@event"
+        ],
+        "body": [
+            "@event",
+            "func ${1:name}(${2}) {",
+            "}"
+        ],
+        "description": "A snippet for the events"
     }
 }

@@ -139,5 +139,19 @@
             "}"
         ],
         "description": "A snippet for the events"
+    },
+    "L1 handler": {
+        "prefix": [
+            "@l1_handler"
+        ],
+        "body": [
+            "@l1_handler",
+            "func ${1:name}{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(",
+            "\t${2}",
+            ") {",
+            "\t${3}",
+            "}"
+        ],
+        "description": "A function that receives message from the L1"
     }
 }

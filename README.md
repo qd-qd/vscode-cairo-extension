@@ -55,3 +55,5 @@ This extension supports all the features developed by Starkware, plus
 - A new snippet for the allocation point `ap`
 - It auto-close parenthesis/curly braces
 - It allows you to surround your selection with parenthesis/curly braces
+- A new snippet for the `@event` decorator
+- A new snippet for the `@l1_handler` decorator
